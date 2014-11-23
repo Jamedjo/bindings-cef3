@@ -79,7 +79,7 @@ typedef unsigned int       uint32;
 // UTF-16 character type
 #ifndef char16
 #if defined(WIN32)
-typedef wchar_t             char16;
+// typedef wchar_t             char16; // Defined in cef_string_types.h
 #else
 typedef unsigned short      char16;
 #endif

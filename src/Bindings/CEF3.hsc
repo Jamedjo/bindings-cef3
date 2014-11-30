@@ -88,14 +88,12 @@ import Bindings.CEF3.Internal.CefTime
 #synonym_t double,  CDouble
 #synonym_t time_t,  CTime
 
--- Undefine Linxu types.  For some reason they are being substituted here
+-- Undefine Linux types. For some reason they are being substituted here
 -- where they shouldn't be.
 #undef cef_cursor_handle_t
 #undef cef_event_handle_t
 #undef cef_window_handle_t
 #undef cef_text_input_context_t
-
-
 
 #starttype cef_base_t
 #field size,      <size_t>

@@ -1,9 +1,12 @@
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
+module Bindings.CEF3.Internal.CefTypesLinux where
+
+#include "include/internal/cef_build.h"
+#if defined(OS_LINUX)
+
 #include <bindings.dsl.h>
 #include "include/internal/cef_types_linux.h"
-#include "include/internal/cef_build.h"
 #include <gtk/gtk.h>
-module Bindings.CEF3.Internal.CefTypesLinux where
 import Foreign.Ptr
 #strict_import
 
@@ -37,3 +40,5 @@ import Bindings.CEF3.Internal.CefString
 #field transparent_painting , CInt
 #field widget , Ptr <GtkWidget>
 #stoptype
+
+#endif  // OS_LINUX

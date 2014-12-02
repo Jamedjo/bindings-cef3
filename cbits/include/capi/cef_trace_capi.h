@@ -99,7 +99,7 @@ CEF_EXPORT int cef_begin_tracing(const cef_string_t* categories);
 //
 // This function must be called on the browser process UI thread.
 ///
-CEF_EXPORT int cef_end_tracing_async(const cef_string_t* tracing_file,
+CEF_EXPORT int cef_end_tracing(const cef_string_t* tracing_file,
     cef_end_tracing_callback_t* callback);
 
 ///

@@ -8,7 +8,9 @@
 -- care is paid to freeing allocated resources.  Proper implementation
 -- would look after things like that.
 --
--- Note that to run the program, you will need a locale .pak file located
+-- Note that to run the program, you will need files from the cef
+-- Resources directory as well as the cef library files from Release.
+-- Copy those files recursively including the locale .pak file located
 -- in the locales directory.  Pak files are available in the CEF
 -- distribution.  If you don't have the right file, you'll see an error
 -- similar to

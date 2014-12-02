@@ -6,6 +6,7 @@ module Bindings.CEF3.Internal.CefTypes
 ( module Bindings.CEF3.Internal.CefTypes
 , module Bindings.CEF3.Internal.CefTypesLinux
 , module Bindings.CEF3.Internal.CefTypesWindows
+, module Bindings.CEF3.Internal.CefTypesMac
 ) where
 import Foreign.Ptr
 #strict_import
@@ -15,6 +16,7 @@ import Bindings.CEF3.Internal.CefStringList
 import Bindings.CEF3.Internal.CefTime
 import Bindings.CEF3.Internal.CefTypesLinux
 import Bindings.CEF3.Internal.CefTypesWindows
+import Bindings.CEF3.Internal.CefTypesMac
 
 {- typedef long int64; -}
 #synonym_t int64 , CLong

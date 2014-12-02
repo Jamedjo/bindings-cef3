@@ -37,13 +37,15 @@ library
                         Bindings.CEF3.Internal.CefTypes,
                         Bindings.CEF3.Internal.CefTime,
                         Bindings.CEF3.Internal.CefTypesWindows,
-                        Bindings.CEF3.Internal.CefTypesLinux
+                        Bindings.CEF3.Internal.CefTypesLinux,
+                        Bindings.CEF3.Internal.CefTypesMac
   include-dirs:        cbits,
                        cbits/include,
                        cbits/include/capi
   if !os(darwin) && !os(windows) {
     pkgconfig-depends:   gtk+-2.0
   }
+  frameworks:          AppKit
   build-depends:       base >=4.7 && <4.8,
                        bindings-DSL >= 1.0.16 && < 1.1
   hs-source-dirs:      src

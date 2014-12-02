@@ -76,14 +76,15 @@ typedef int                 int32;
 typedef unsigned int       uint32;
 #endif
 
-// UTF-16 character type
-#ifndef char16
-#if defined(WIN32)
+// error: redefinition of typedef ‘char16’ //cef_string_types.h:53 (OS_MACOSX)
+// // UTF-16 character type
+// #ifndef char16
+// #if defined(WIN32)
 // typedef wchar_t             char16; // Defined in cef_string_types.h
-#else
-typedef unsigned short      char16;
-#endif
-#endif
+// #else
+// typedef unsigned short      char16;
+// #endif
+// #endif
 
 // 32-bit ARGB color value, not premultiplied. The color components are always
 // in a known order. Equivalent to the SkColor type.

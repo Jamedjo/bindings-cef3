@@ -36,6 +36,7 @@ library
                         Bindings.CEF3.Internal.CefStringMultimap,
                         Bindings.CEF3.Internal.CefTypes,
                         Bindings.CEF3.Internal.CefTime,
+                        Bindings.CEF3.Internal.CefTypesWindows,
                         Bindings.CEF3.Internal.CefTypesLinux
   include-dirs:        cbits,
                        cbits/include,

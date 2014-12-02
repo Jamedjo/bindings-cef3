@@ -88,8 +88,8 @@ import Bindings.CEF3.Internal.CefTime
 #synonym_t double,  CDouble
 #synonym_t time_t,  CTime
 
--- Undefine Linux types. For some reason they are being substituted here
--- where they shouldn't be.
+-- Undefine #define types. For some reason they are being substituted here where
+-- they shouldn't be. Would be easier if CEF used typedef instead of #define
 #undef cef_cursor_handle_t
 #undef cef_event_handle_t
 #undef cef_window_handle_t

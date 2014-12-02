@@ -5,10 +5,11 @@
 #include "include/internal/cef_export.h"
 module Bindings.CEF3.Internal.CefStringTypes where
 import Foreign.Ptr
+import Foreign.C.String(CWString)
 #strict_import
 
 #if defined(OS_WIN)
-#synonym_t char16 , <wchar_t>
+#synonym_t char16 , CWString
 #else
 #synonym_t char16 , CUShort
 #ifndef WCHAR_T_IS_UTF32

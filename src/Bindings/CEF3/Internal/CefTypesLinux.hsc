@@ -1,16 +1,17 @@
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
+#include <bindings.dsl.h>
+
 module Bindings.CEF3.Internal.CefTypesLinux where
+#strict_import
+import Foreign.Ptr
+import Bindings.CEF3.Internal.CefString
 
 #include "include/internal/cef_build.h"
 #if defined(OS_LINUX)
 
-#include <bindings.dsl.h>
 #include "include/internal/cef_types_linux.h"
 #include <gtk/gtk.h>
-import Foreign.Ptr
-#strict_import
 
-import Bindings.CEF3.Internal.CefString
 {- typedef struct _cef_main_args_t {
             int argc; char * * argv;
         } cef_main_args_t; -}

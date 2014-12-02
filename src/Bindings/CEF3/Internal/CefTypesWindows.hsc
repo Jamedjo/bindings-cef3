@@ -1,4 +1,6 @@
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
+#include <bindings.dsl.h>
+
 module Bindings.CEF3.Internal.CefTypesWindows where
 #strict_import
 import Foreign.Ptr
@@ -7,7 +9,6 @@ import Bindings.CEF3.Internal.CefString
 #include "include/internal/cef_build.h"
 #if defined(OS_WIN)
 
-#include <bindings.dsl.h>
 #include "include/internal/cef_string.h"
 #include "include/internal/cef_types_win.h"
 
